@@ -40,36 +40,6 @@ setInterval(()=>{
     document.getElementsByClassName('question_btn ml5')[0].click();
 },200)
 
-
-setInterval(()=>{
-//     if(document.getElementsByTagName('img').length > 6){
-//         for(var i = 0;i<document.getElementsByTagName('img').length;i++){
-//             if(document.getElementsByTagName('img')[i].src.indexOf("/public/pc3/qiangshi.png") != -1){
-//                 document.getElementsByTagName('img')[i].click();
-//             }
-//         }
-//         document.getElementsByClassName('card_bottom_right_item')[2].img.click();
-//     }
-    if(document.getElementsByClassName('result_back_btn').length > 0){
-       document.getElementsByClassName('result_back_btn')[0].click();
-    }
-},200)
-
-setInterval(()=>{
-    if(document.getElementsByClassName('question_btn ml5')[1].innerHTML != "提交"){
-        document.getElementsByClassName('el-input__inner')[0].value = document.getElementsByClassName('question_btn ml5')[1].innerHTML;
-        document.getElementsByClassName('code_change_text')[0].innerHTML = "泸职🧡";
-        //document.getElementsByClassName('el-input__inner').dispatchEvent(new Event('input'));
-        document.getElementsByClassName('el-input__inner')[0].dispatchEvent(new Event('input'));
-        //document.getElementsByClassName('common_btn2 btn_red')[0].click();
-        //document.querySelector('.common_btn2').click();
-        document.getElementsByClassName('question_btn ml5')[1].innerHTML = "提交";
-    }
-    if(document.getElementsByClassName('common_btn2 btn_red').length > 0){
-        document.getElementsByClassName('common_btn2 btn_red')[0].click();
-    }
-},200)
-
 function getstring(x_string){
     x_string = x_string.replace(/\s+/g,"");
 	var x_buffer = "";
